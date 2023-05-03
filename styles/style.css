@@ -1,3 +1,14 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
 .header {
   display: flex;
   position: relative;
@@ -6,19 +17,19 @@
   max-height: 756px;
   background-color: #f2f2f2;
   align-items: center;
-
-  min-width: 1100px;
-  max-width: 1600px;
   margin: 0 auto 100px auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.icon{
+  width: 288px;
+  height: 32px;
 }
 
 .icon_place_header{
   position: absolute;
   top: 30px;
   left: 64px;
-  width: 288px;
-  min-height: 32px;
 }
 
 .header__title{
@@ -42,7 +53,7 @@
   z-index: 2;
 }
 
-.header__image{
+.header__main-illustration{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -71,15 +82,13 @@
   display: flex;
   justify-content: center;
 
-  min-width: 1100px;
-  max-width: 1600px;
+  width: 80%;
   margin: 0 auto 100px auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .two-columns{
   display: flex;
-  width: 80%;
   justify-content: space-between;
 }
 
@@ -122,8 +131,6 @@
   display: flex;
   align-items: center;
 
-  min-width: 1100px;
-  max-width: 1600px;
   margin: 0 auto 100px auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
@@ -182,9 +189,6 @@
   min-height: 890px;
   align-items: center;
   background-color: #f2f2f2;
-
-  min-width: 1100px;
-  max-width: 1600px;
   margin: 0 auto 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
@@ -229,7 +233,7 @@
   margin: 0;
 }
 
-.kaufman_theme_dark{
+.kaufman{
   display: flex;
   flex-direction: column;
   position: relative;
@@ -238,9 +242,6 @@
   align-items: center;
   background-color: #1f1f1f;
   overflow: hidden;
-
-  min-width: 1100px;
-  max-width: 1600px;
   margin: 0 auto 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
@@ -257,49 +258,24 @@
 
 .section-title_theme_dark{
   color: white;
-  line-height: 1.15;
-  font-size:60px;
-  font-weight: 600;
-  width: 60%;
-  text-align: center;
-  margin: 0;
   z-index: 1;
 }
 
 .section-subtitle_theme_dark{
   color: white;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  width: 60%;
-  text-align: center;
-  margin: 20px 0 0 0;
   z-index: 1;
 }
 
 .table_theme_dark{
-  display: flex;
-  max-width: 1100px;
-  margin: 0 auto 0 auto;
-  padding: 0;
-  list-style-type: none;
-  flex-wrap: wrap;
-  justify-content: space-between;
   z-index: 1;
 }
 
 .table__heading_theme_dark{
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
+
 }
 
 .table__text_theme_dark{
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 20px 0 0 0;
+
 }
 
 .table__cell_theme_dark {
@@ -317,9 +293,6 @@
   background-color: #1f1f1f;
   justify-content: center;
   min-height: 350px;
-
-  min-width: 1100px;
-  max-width: 1600px;
   margin: 0 auto 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
@@ -328,6 +301,10 @@
   display: flex;
   width: 90%;
   justify-content: space-between;
+}
+
+.footer__column{
+
 }
 
 .footer__column_content_copyright{
@@ -378,7 +355,7 @@
 }
 
 .icon_place_footer{
-  width: 228px;
+  height: auto;
   min-height: 32px;
 }
 
