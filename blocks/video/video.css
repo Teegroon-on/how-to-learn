@@ -1,0 +1,8 @@
+.video{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin: 100px auto 0 auto;
+  height: 440px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
