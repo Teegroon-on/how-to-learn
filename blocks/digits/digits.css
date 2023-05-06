@@ -1,0 +1,8 @@
+.digits{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+
+  margin: 0 auto 100px auto;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}

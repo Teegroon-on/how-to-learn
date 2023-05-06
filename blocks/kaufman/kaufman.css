@@ -1,0 +1,12 @@
+.kaufman{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  align-items: center;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
